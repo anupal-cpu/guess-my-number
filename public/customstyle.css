@@ -1,0 +1,139 @@
+.check-btn:active {
+  transform: scale(0.96);
+}
+
+.restart-btn:active {
+  transform: scale(0.96);
+}
+
+.message-area {
+  top: -5px;
+  gap: 10px;
+}
+/* javascript */
+
+.dim {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.hide {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.tutorial-area {
+  bottom: 20px;
+  width: 13rem;
+  height: 5rem;
+  background-color: #319795;
+  right: 50%;
+  border-radius: 7px;
+  line-height: 1.6rem;
+}
+
+.list {
+  margin-left: 10px;
+}
+
+.hint-section {
+  top: 13px;
+  width: max-content;
+  height: max-content;
+  padding: 6px;
+  box-shadow: 10px 10px 83px -24px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 10px 10px 83px -24px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 10px 10px 83px -24px rgba(0, 0, 0, 0.71);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  right: 30%;
+  border: 1px solid rgb(117, 212, 212);
+}
+
+.want-or-not-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  padding: 0 4px 4px 0;
+}
+
+.hint-section .want-hint-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #404a53;
+}
+
+.hint-section p span {
+  color: rgb(206, 66, 194);
+}
+
+.yes-hint {
+  background-color: blue;
+  color: white;
+  width: 3rem;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.1s ease;
+}
+
+.yes-hint:active {
+  transform: translateY(3px);
+  transition: o.1s ease;
+}
+
+.no-hint {
+  background-color: rgb(226, 86, 86);
+  color: white;
+  width: 3rem;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.no-hint:active {
+  transform: translateY(3px);
+  transition: 0.1s ease;
+}
+
+.check-btn {
+  cursor: pointer;
+}
+
+.restart-btn {
+  cursor: pointer;
+}
+
+.wrap-hint {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.actual-hint {
+  position: absolute;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+  color: #404a53;
+}
+
+.hint-hide {
+  transform: translateX(-300px);
+}
+
+.trans-zero {
+  transform: translateX(0);
+}
+
+.img-hint {
+  width: 1.6rem;
+  height: 1.6rem;
+}

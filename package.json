@@ -1,0 +1,14 @@
+{
+  "name": "guess-my-number",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "build": "tailwindcss build -i src/style.css -o public/teststyle.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}

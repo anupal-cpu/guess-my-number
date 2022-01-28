@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./teststyle.css" />
+    <link rel="stylesheet" href="./customstyle.css" />
+    <title>tailwind practice</title>
+  </head>
+  <body>
+    <main
+      class="main relative gap-x-6 flex justify-center w-full h-screen items-center"
+    >
+      <section class="main_game flex flex-col h-72 justify-end relative">
+        <headder
+          class="message-area absolute top-0 flex justify-center items-center gap-x-1"
+        >
+          <img
+            src="./instruction-icon.png"
+            alt="instruction-icon"
+            class="instruct-icon w-6 h-6"
+          />
+          <h1 class="message text-xl font-semibold text-teal-600">
+            Start guessing . . .
+          </h1>
+        </headder>
+        <div
+          class="container mb-4 justify-around w-80 h-60 flex flex-col shadow-lg shadow-black items-center rounded-md border-2 border-emerald-500"
+        >
+          <header class="headline">
+            <h1 class="text-2xl font-bold text-slate-600">Guess The Number</h1>
+          </header>
+          <section
+            class="number-place relative w-full flex justify-center items-center"
+          >
+            <div class="line w-3/4 h-0.5 absolute bg-purple-600"></div>
+            <h1
+              class="my-number relative rounded z-10 w-12 h-8 bg-slate-300 flex justify-center items-center"
+            >
+              <span class="question text-4xl font-extrabold text-slate-800"
+                >?</span
+              >
+              <span
+                class="number opacity-0 absolute font-semibold text-slate-800 text-3xl"
+              ></span>
+            </h1>
+          </section>
+          <div class="input-section flex gap-x-3.5">
+            <input
+              type="number"
+              class="input-num w-20 h-16 font-semibold text-slate-800 text-center text-2xl border-2 border-emerald-500 rounded"
+              min="0"
+              max="20"
+            />
+            <input
+              type="button"
+              class="check-btn text-lg font-semibold text-white w-20 h-16 rounded bg-purple-600"
+              value="Check?"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="scores flex flex-col h-60 justify-around">
+        <div
+          class="high-score flex flex-col justify-end items-center relative w-20 h-16 bg-emerald-500 rounded my-3.5"
+        >
+          <h1
+            class="score-num font-semibold absolute text-xl bottom-6 text-slate-800"
+          >
+            0
+          </h1>
+          <h1 class="score-text text-lg font-semibold text-white">H-score</h1>
+        </div>
+        <div
+          class="current-score w-20 h-16 bg-emerald-500 rounded flex flex-col justify-end items-center relative"
+        >
+          <h1
+            class="current-num absolute text-xl font-semibold bottom-6 text-slate-800"
+          >
+            20
+          </h1>
+          <h1 class="current-text text-white text-lg font-semibold">Score</h1>
+        </div>
+        <input
+          type="button"
+          value="Restart"
+          class="restart-btn text-lg font-semibold text-white w-20 h-14 rounded bg-purple-600 mt-3.5"
+        />
+      </section>
+    </main>
+    <script src="./test.js"></script>
+  </body>
+</html>
